@@ -1,0 +1,7 @@
+student -> class
+many to one
+nb: satu student cuma bisa punya satu class atau banyak" student bisa dimiliki oleh satu class
+
+class -> student
+one to many
+nb: satu class bisa memiliki banyak student contoh class 1a didalamnya ada budi, anto, ani dan lainnya
