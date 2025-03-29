@@ -5,3 +5,19 @@ nb: satu student cuma bisa punya satu class atau banyak" student bisa dimiliki o
 class -> student
 one to many
 nb: satu class bisa memiliki banyak student contoh class 1a didalamnya ada budi, anto, ani dan lainnya
+
+
+
+many to many
+student -> extracurricular
+satu student bisa memiliki banyak extracurricular contoh eko ekskul nya sepakbola, voli dll
+extracurricular -> student
+extracurricular juga bisa memiliki banyak student contoh volly student nya eko, reni dll
+buat tabel pivot untuk menyimpan pk dari tabel" yg berkaitan
+
+
+
+join multiple tabel
+student - class - teacher
+di stusent ada class_id, di class ada teacher_id
+kalo dikasih teacher_id juga di student nanti datanya gk konsisten

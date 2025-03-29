@@ -16,4 +16,9 @@ class ClassRoom extends Model
         // harus ditulis karena nama tabel class otomatis yg dikenalin kan kalo namanya class_id, sedangkan nama model ClassRoom maka laravel ngenalinnya adl class_room_id sebagai fk nya
         return $this->hasMany(Student::class, 'class_id', 'id');
     }
+
+    public function homeroomTeacher()
+    {
+        return $this->belongsTo(Teacher::class, 'teacher_id', 'id');
+    }
 }
